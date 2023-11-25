@@ -1,0 +1,140 @@
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+.navbar {
+  /* margin-top: 60px; */
+  border-radius: 10px;
+  /* position: relative; */
+  /* top: 30px; */
+}
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+  margin-bottom: 0;
+  height: 30vh;
+  background-image: url(../image/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-item a {
+  color: rgb(15, 197, 15);
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-item a:hover {
+  color: #000;
+}
+
+.nav-item a::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #009970;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.nav-item a:hover::before {
+  width: 80%;
+  visibility: visible;
+}
+
+.jumbotron,
+.text span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-family: system-ui;
+  letter-spacing: 3px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* container-content */
+.box {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  position: relative;
+}
+
+/* footer */
+/* body{margin-top:20px;} */
+.footer {
+  background: #232a34;
+  /* padding-bottom: 20px;
+  padding-top: 10px; */
+  height: 13vh;
+}
+.footer_menu {
+  margin-bottom: 20px;
+}
+.footer_menu ul {
+  list-style: none;
+  text-align: center;
+}
+.footer_menu ul li {
+  display: inline-block;
+}
+.footer_menu ul li a {
+  color: #fff;
+  padding: 0 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer_menu ul li a:hover {
+  color: #554c86;
+}
+
+/*START FOOTER SOCIAL DESIGN*/
+.footer_profile {
+  margin-bottom: 40px;
+}
+.footer_profile ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.footer_profile ul li {
+  display: inline-block;
+}
+@media only screen and (max-width: 480px) {
+  .footer_profile ul li {
+    margin: 2px;
+  }
+}
+.footer_profile ul li a img {
+  width: 60px;
+}
+
+.footer_profile ul li a {
+  background: #554c86;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 50%;
+  line-height: 40px;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+.footer_copyright {
+  position: relative;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+

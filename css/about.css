@@ -1,0 +1,144 @@
+.jumbotron {
+  background: url(../image/kep.jpg) no-repeat center;
+  background-size: cover;
+  background-position-y: 58%;
+  color: #fff;
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay; 
+}
+
+
+h4 {
+  font-weight: 500;
+}
+
+.slider {
+  max-width: 1200px;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.slider i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+}
+
+.slider .gambar {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.gambar.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.gambar.dragging img{
+    pointer-events: none;
+}
+
+.gambar img {
+  height: 240px;
+  object-fit: cover;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+
+.gambar img:first-child {
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .gambar img {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .gambar img {
+    width: 100%;
+  }
+}
+
+/* footer */
+* footer */
+body{margin-top:20px;}
+.footer {
+  background: #232a34;
+  height: 12vh;
+}
+.footer_menu {
+  margin-bottom: 20px;
+}
+.footer_menu ul {
+  list-style: none;
+  text-align: center;
+}
+.footer_menu ul li {
+  display: inline-block;
+}
+.footer_menu ul li a {
+  color: #fff;
+  padding: 0 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer_menu ul li a:hover {
+  color: #554c86;
+}
+
+/*START FOOTER SOCIAL DESIGN*/
+.footer_profile {
+  margin-bottom: 40px;
+}
+.footer_profile ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.footer_profile ul li {
+  display: inline-block;
+}
+@media only screen and (max-width: 480px) {
+  .footer_profile ul li {
+    margin: 2px;
+  }
+}
+.footer_profile ul li a img {
+  width: 60px;
+}
+
+.footer_profile ul li a {
+  background: #554c86;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 50%;
+  line-height: 40px;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+.footer_copyright {
+  position: relative;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
